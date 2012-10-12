@@ -67,6 +67,9 @@
                     case 4:
                         mapBlockSprite=[[CCSprite alloc]initWithFile:@"map_upstairs.png"];
                         break;
+                    case 5:
+                        mapBlockSprite=[[CCSprite alloc]initWithFile:@"map_upstairs.png"];
+                        break;
                     default:
                         break;
                 }
@@ -91,7 +94,7 @@
     NSData *plistXML=[[NSFileManager defaultManager]contentsAtPath:filePath];
     dict=(NSMutableDictionary*)[NSPropertyListSerialization propertyListFromData:plistXML mutabilityOption:NSPropertyListMutableContainersAndLeaves format:&format errorDescription:&error];
     NSLog(@"%@",dict);
-    return [dict objectForKey:@"BeforeStart"];
+    return [dict objectForKey:@"Floor9"];
 }
 
 // on "dealloc" you need to release all your retained objects
