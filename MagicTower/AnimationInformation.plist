@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AnimationInformation</key>
+	<array>
+		<dict>
+			<key>AnimationID</key>
+			<string>voidAnimation</string>
+			<key>AnimationFrames</key>
+			<array>
+				<string>map_void_0.png</string>
+				<string>map_void_1.png</string>
+			</array>
+		</dict>
+		<dict>
+			<key>AnimationID</key>
+			<string>redSeaAnimation</string>
+			<key>AnimationFrames</key>
+			<array>
+				<string>map_radSea_0.png</string>
+				<string>map_radSea_1.png</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -160,18 +160,18 @@ kmBool kmRay2IntersectTriangle(const kmRay2* ray, const kmVec2* p1, const kmVec2
         if(this_distance < distance) {
             final_intersect.x = intersect.x;
             final_intersect.y = intersect.y;
-            distance = this_distance;
+            //distance = this_distance;
 
             calculate_line_normal(*p3, *p1, &normal);
         }
     }
 
     if(intersected) {
-        intersection->x = final_intersect.x;
-        intersection->y = final_intersect.y;
+        //intersection->x = final_intersect.x;
+        //intersection->y = final_intersect.y;
         if(normal_out) {
-            normal_out->x = normal.x;
-            normal_out->y = normal.y;
+            //normal_out->x = normal.x;
+            //normal_out->y = normal.y;
         }
     }
 

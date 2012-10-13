@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BlockInformation</key>
+	<array>
+		<dict>
+			<key>UsingImage</key>
+			<string></string>
+			<key>AnimationID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>UsingImage</key>
+			<string>map_wall.png</string>
+			<key>AnimationID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>UsingImage</key>
+			<string>map_radSea_0.png</string>
+			<key>AnimationID</key>
+			<string>redSeaAnimation</string>
+		</dict>
+		<dict>
+			<key>UsingImage</key>
+			<string>map_void_0.png</string>
+			<key>AnimationID</key>
+			<string>voidAnimation</string>
+		</dict>
+		<dict>
+			<key>UsingImage</key>
+			<string>map_upstairs.png</string>
+			<key>AnimationID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>UsingImage</key>
+			<string>map_downstairs.png</string>
+			<key>AnimationID</key>
+			<string></string>
+		</dict>
+	</array>
+</dict>
+</plist>

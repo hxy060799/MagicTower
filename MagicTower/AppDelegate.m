@@ -9,7 +9,7 @@
 #import "cocos2d.h"
 
 #import "AppDelegate.h"
-#import "HelloWorldLayer.h"
+#import "GameLayer.h"
 
 @implementation AppController
 
@@ -84,7 +84,7 @@
 	[CCTexture2D PVRImagesHavePremultipliedAlpha:YES];
 
 	// and add the scene to the stack. The director will run it when it automatically when the view is displayed.
-	[director_ pushScene: [HelloWorldLayer scene]]; 
+	[director_ pushScene: [GameLayer scene]]; 
 
 	return YES;
 }
