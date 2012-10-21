@@ -128,7 +128,9 @@
 		A904F0D216284BF8000E00D4 /* vec4.c in Sources */ = {isa = PBXBuildFile; fileRef = A904F0D116284BF8000E00D4 /* vec4.c */; };
 		A904F0D716284BF8000E00D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A904F0D616284BF8000E00D4 /* main.m */; };
 		A904F0DA16284BF8000E00D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A904F0D916284BF8000E00D4 /* AppDelegate.m */; };
-		A904F0EA16284CB2000E00D4 /* gameBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A904F0E516284CB2000E00D4 /* gameBackground.png */; };
+		A929C2C2163395A900BB4CEE /* gameBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A929C2C1163395A900BB4CEE /* gameBackground.png */; };
+		A929C2C5163395B700BB4CEE /* block_world.plist in Resources */ = {isa = PBXBuildFile; fileRef = A929C2C3163395B700BB4CEE /* block_world.plist */; };
+		A929C2C6163395B700BB4CEE /* block_world.png in Resources */ = {isa = PBXBuildFile; fileRef = A929C2C4163395B700BB4CEE /* block_world.png */; };
 		A92BB0271629939900829A90 /* AnimationInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = A92BB0261629939900829A90 /* AnimationInformation.plist */; };
 		A92BB02B1629986200829A90 /* BlockInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = A92BB02A1629986200829A90 /* BlockInformation.plist */; };
 		A941B90C16290A8C00FF8C3C /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A941B90B16290A8C00FF8C3C /* GameLayer.m */; };
@@ -137,8 +139,13 @@
 		A99951321629139200741D24 /* ButtonPlusSel.png in Resources */ = {isa = PBXBuildFile; fileRef = A99951311629139200741D24 /* ButtonPlusSel.png */; };
 		A999513516291A5700741D24 /* ButtonMinus.png in Resources */ = {isa = PBXBuildFile; fileRef = A999513316291A5700741D24 /* ButtonMinus.png */; };
 		A999513616291A5700741D24 /* ButtonMinusSel.png in Resources */ = {isa = PBXBuildFile; fileRef = A999513416291A5700741D24 /* ButtonMinusSel.png */; };
-		A999514B16292AFC00741D24 /* block_world.plist in Resources */ = {isa = PBXBuildFile; fileRef = A999514916292AFC00741D24 /* block_world.plist */; };
-		A999514C16292AFC00741D24 /* block_world.png in Resources */ = {isa = PBXBuildFile; fileRef = A999514A16292AFC00741D24 /* block_world.png */; };
+		A9A1B0971631753600F71604 /* block_monster.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9A1B0951631753600F71604 /* block_monster.plist */; };
+		A9A1B0981631753600F71604 /* block_monster.png in Resources */ = {isa = PBXBuildFile; fileRef = A9A1B0961631753600F71604 /* block_monster.png */; };
+		A9C1ADD21633BF590066E3EB /* player.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9C1ADD01633BF590066E3EB /* player.plist */; };
+		A9C1ADD31633BF590066E3EB /* player.png in Resources */ = {isa = PBXBuildFile; fileRef = A9C1ADD11633BF590066E3EB /* player.png */; };
+		A9C1ADD71633BF8F0066E3EB /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A9C1ADD61633BF8F0066E3EB /* Player.m */; };
+		A9D8A4D91632BF8C00E447ED /* block_items.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9D8A4D71632BF8C00E447ED /* block_items.plist */; };
+		A9D8A4DA1632BF8C00E447ED /* block_items.png in Resources */ = {isa = PBXBuildFile; fileRef = A9D8A4D81632BF8C00E447ED /* block_items.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -396,7 +403,9 @@
 		A904F0D616284BF8000E00D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A904F0D816284BF8000E00D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A904F0D916284BF8000E00D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A904F0E516284CB2000E00D4 /* gameBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameBackground.png; sourceTree = "<group>"; };
+		A929C2C1163395A900BB4CEE /* gameBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameBackground.png; sourceTree = "<group>"; };
+		A929C2C3163395B700BB4CEE /* block_world.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = block_world.plist; sourceTree = "<group>"; };
+		A929C2C4163395B700BB4CEE /* block_world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_world.png; sourceTree = "<group>"; };
 		A92BB0261629939900829A90 /* AnimationInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AnimationInformation.plist; sourceTree = "<group>"; };
 		A92BB02A1629986200829A90 /* BlockInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BlockInformation.plist; sourceTree = "<group>"; };
 		A941B90A16290A8C00FF8C3C /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
@@ -406,8 +415,14 @@
 		A99951311629139200741D24 /* ButtonPlusSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPlusSel.png; sourceTree = "<group>"; };
 		A999513316291A5700741D24 /* ButtonMinus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonMinus.png; sourceTree = "<group>"; };
 		A999513416291A5700741D24 /* ButtonMinusSel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonMinusSel.png; sourceTree = "<group>"; };
-		A999514916292AFC00741D24 /* block_world.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = block_world.plist; sourceTree = "<group>"; };
-		A999514A16292AFC00741D24 /* block_world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_world.png; sourceTree = "<group>"; };
+		A9A1B0951631753600F71604 /* block_monster.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = block_monster.plist; sourceTree = "<group>"; };
+		A9A1B0961631753600F71604 /* block_monster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_monster.png; sourceTree = "<group>"; };
+		A9C1ADD01633BF590066E3EB /* player.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = player.plist; sourceTree = "<group>"; };
+		A9C1ADD11633BF590066E3EB /* player.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player.png; sourceTree = "<group>"; };
+		A9C1ADD51633BF8F0066E3EB /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		A9C1ADD61633BF8F0066E3EB /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		A9D8A4D71632BF8C00E447ED /* block_items.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = block_items.plist; sourceTree = "<group>"; };
+		A9D8A4D81632BF8C00E447ED /* block_items.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_items.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,6 +485,8 @@
 				A904F0D916284BF8000E00D4 /* AppDelegate.m */,
 				A941B90A16290A8C00FF8C3C /* GameLayer.h */,
 				A941B90B16290A8C00FF8C3C /* GameLayer.m */,
+				A9C1ADD51633BF8F0066E3EB /* Player.h */,
+				A9C1ADD61633BF8F0066E3EB /* Player.m */,
 				A904EF6816284BEB000E00D4 /* Resources */,
 				A904EF8016284BEC000E00D4 /* libs */,
 				A904F0D416284BF8000E00D4 /* Supporting Files */,
@@ -480,6 +497,8 @@
 		A904EF6816284BEB000E00D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9C1ADD01633BF590066E3EB /* player.plist */,
+				A9C1ADD11633BF590066E3EB /* player.png */,
 				A999513316291A5700741D24 /* ButtonMinus.png */,
 				A999513416291A5700741D24 /* ButtonMinusSel.png */,
 				A999512E1629137D00741D24 /* ButtonPlus.png */,
@@ -487,6 +506,10 @@
 				A9535684162850AE000B726A /* MapInformation.plist */,
 				A92BB0261629939900829A90 /* AnimationInformation.plist */,
 				A92BB02A1629986200829A90 /* BlockInformation.plist */,
+				A9A1B0951631753600F71604 /* block_monster.plist */,
+				A9A1B0961631753600F71604 /* block_monster.png */,
+				A9D8A4D71632BF8C00E447ED /* block_items.plist */,
+				A9D8A4D81632BF8C00E447ED /* block_items.png */,
 				A904F0E416284C92000E00D4 /* MapBlock */,
 				A904F0E316284C89000E00D4 /* Background */,
 				A904EF6916284BEB000E00D4 /* Default.png */,
@@ -848,7 +871,7 @@
 		A904F0E316284C89000E00D4 /* Background */ = {
 			isa = PBXGroup;
 			children = (
-				A904F0E516284CB2000E00D4 /* gameBackground.png */,
+				A929C2C1163395A900BB4CEE /* gameBackground.png */,
 			);
 			name = Background;
 			sourceTree = "<group>";
@@ -856,8 +879,8 @@
 		A904F0E416284C92000E00D4 /* MapBlock */ = {
 			isa = PBXGroup;
 			children = (
-				A999514916292AFC00741D24 /* block_world.plist */,
-				A999514A16292AFC00741D24 /* block_world.png */,
+				A929C2C3163395B700BB4CEE /* block_world.plist */,
+				A929C2C4163395B700BB4CEE /* block_world.png */,
 			);
 			name = MapBlock;
 			sourceTree = "<group>";
@@ -924,16 +947,22 @@
 				A904EF7C16284BEB000E00D4 /* Icon@2x.png in Resources */,
 				A904EF7F16284BEC000E00D4 /* iTunesArtwork in Resources */,
 				A904F0B816284BF6000E00D4 /* ChangeLog in Resources */,
-				A904F0EA16284CB2000E00D4 /* gameBackground.png in Resources */,
 				A9535685162850AE000B726A /* MapInformation.plist in Resources */,
 				A999512F1629137D00741D24 /* ButtonPlus.png in Resources */,
 				A99951321629139200741D24 /* ButtonPlusSel.png in Resources */,
 				A999513516291A5700741D24 /* ButtonMinus.png in Resources */,
 				A999513616291A5700741D24 /* ButtonMinusSel.png in Resources */,
-				A999514B16292AFC00741D24 /* block_world.plist in Resources */,
-				A999514C16292AFC00741D24 /* block_world.png in Resources */,
 				A92BB0271629939900829A90 /* AnimationInformation.plist in Resources */,
 				A92BB02B1629986200829A90 /* BlockInformation.plist in Resources */,
+				A9A1B0971631753600F71604 /* block_monster.plist in Resources */,
+				A9A1B0981631753600F71604 /* block_monster.png in Resources */,
+				A9D8A4D91632BF8C00E447ED /* block_items.plist in Resources */,
+				A9D8A4DA1632BF8C00E447ED /* block_items.png in Resources */,
+				A929C2C2163395A900BB4CEE /* gameBackground.png in Resources */,
+				A929C2C5163395B700BB4CEE /* block_world.plist in Resources */,
+				A929C2C6163395B700BB4CEE /* block_world.png in Resources */,
+				A9C1ADD21633BF590066E3EB /* player.plist in Resources */,
+				A9C1ADD31633BF590066E3EB /* player.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1045,6 +1074,7 @@
 				A904F0D716284BF8000E00D4 /* main.m in Sources */,
 				A904F0DA16284BF8000E00D4 /* AppDelegate.m in Sources */,
 				A941B90C16290A8C00FF8C3C /* GameLayer.m in Sources */,
+				A9C1ADD71633BF8F0066E3EB /* Player.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

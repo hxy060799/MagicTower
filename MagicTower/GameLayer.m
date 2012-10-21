@@ -7,6 +7,7 @@
 //
 
 #import "GameLayer.h"
+#import "Player.h"
 
 @interface GameLayer(){
     //玩家当前位于的楼层.注意:第一层对应的索引为1,因为前面还有个序章
@@ -15,12 +16,14 @@
     NSMutableArray *gameMap;
     //地图是通过11*11=121个精灵拼凑而成的,这是个二维数组
     NSMutableArray *mapSprites;
-    //将要被移重新加载的地图点会被压进这个集合,从一份CC教程里面学过来的机制,这样做节省资源,不用因为打死一只怪物就重新加载整张地图
+    //将要被移重新加载的地图点会被压进这个集合,从一份教程里面学过来的机制,这样做节省资源,不用因为打死一只怪物就重新加载整张地图
     NSMutableSet *readyToReloadPoints;
     //
     NSMutableDictionary *animations;
     //
     NSMutableArray *blocksInformation;
+    //
+    Player *player;
 }
 
 @end
@@ -40,6 +43,9 @@
         self.isTouchEnabled=YES;
         //载入图像
         [[CCSpriteFrameCache sharedSpriteFrameCache]addSpriteFramesWithFile:@"block_world.plist"];
+        [[CCSpriteFrameCache sharedSpriteFrameCache]addSpriteFramesWithFile:@"block_monster.plist"];
+        [[CCSpriteFrameCache sharedSpriteFrameCache]addSpriteFramesWithFile:@"block_items.plist"];
+        [[CCSpriteFrameCache sharedSpriteFrameCache]addSpriteFramesWithFile:@"player.plist"];
         //加载动画
         [self loadAnimation];
         //加载方块信息
@@ -67,6 +73,10 @@
         //画出地图
         [self loadMap:YES];
         
+        player=[[Player alloc]init];
+        player.sprite.anchorPoint=ccp(0,0);
+        player.sprite.position=ccp(50,50);
+        [self addChild:player.sprite];
 	}
 	return self;
 }
@@ -87,7 +97,6 @@
         [[CCAnimationCache sharedAnimationCache] addAnimation:animation name:animName];
         [animations setObject:animation forKey:animName];
         NSLog(@"Animation:%@ Loaded!",animName);
-        
     }
 }
 
@@ -115,7 +124,7 @@
             NSDictionary *currentBlockInformation=[blocksInformation objectAtIndex:thisBlock];
             
             
-            if(thisBlock!=0){
+            if(thisBlock>=0){
                 CCSprite *mapBlockSprite=[CCSprite spriteWithSpriteFrameName:[currentBlockInformation objectForKey:@"UsingImage"]];
                 if(![[currentBlockInformation objectForKey:@"AnimationID"]isEqualToString:@""]){
                     [mapBlockSprite runAction:[CCRepeatForever actionWithAction:[CCAnimate actionWithAnimation:[animations objectForKey:[currentBlockInformation objectForKey:@"AnimationID"]]]]];

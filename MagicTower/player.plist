@@ -4,7 +4,33 @@
     <dict>
         <key>frames</key>
         <dict>
-            <key>map_downstairs.png</key>
+            <key>player_down.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{83,29},{25,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,25}}</string>
+                <key>sourceSize</key>
+                <string>{25,25}</string>
+            </dict>
+            <key>player_goDown_0.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{56,29},{25,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,25}}</string>
+                <key>sourceSize</key>
+                <string>{25,25}</string>
+            </dict>
+            <key>player_goDown_1.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{29,83},{25,25}}</string>
@@ -17,10 +43,10 @@
                 <key>sourceSize</key>
                 <string>{25,25}</string>
             </dict>
-            <key>map_ground_0.png</key>
+            <key>player_goLeft_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{25,25}}</string>
+                <string>{{29,56},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -30,59 +56,7 @@
                 <key>sourceSize</key>
                 <string>{25,25}</string>
             </dict>
-            <key>map_radSea_0.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,29},{25,25}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{25,25}}</string>
-                <key>sourceSize</key>
-                <string>{25,25}</string>
-            </dict>
-            <key>map_radSea_1.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{29,2},{25,25}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{25,25}}</string>
-                <key>sourceSize</key>
-                <string>{25,25}</string>
-            </dict>
-            <key>map_upstairs.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,83},{25,25}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{25,25}}</string>
-                <key>sourceSize</key>
-                <string>{25,25}</string>
-            </dict>
-            <key>map_void_0.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{2,56},{25,25}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{25,25}}</string>
-                <key>sourceSize</key>
-                <string>{25,25}</string>
-            </dict>
-            <key>map_void_1.png</key>
+            <key>player_goLeft_1.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{29,29},{25,25}}</string>
@@ -95,10 +69,88 @@
                 <key>sourceSize</key>
                 <string>{25,25}</string>
             </dict>
-            <key>map_wall.png</key>
+            <key>player_goRight_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{29,56},{25,25}}</string>
+                <string>{{83,2},{25,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,25}}</string>
+                <key>sourceSize</key>
+                <string>{25,25}</string>
+            </dict>
+            <key>player_goRight_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{56,2},{25,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,25}}</string>
+                <key>sourceSize</key>
+                <string>{25,25}</string>
+            </dict>
+            <key>player_goUp_0.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{29,2},{25,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,25}}</string>
+                <key>sourceSize</key>
+                <string>{25,25}</string>
+            </dict>
+            <key>player_goUp_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,83},{25,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,25}}</string>
+                <key>sourceSize</key>
+                <string>{25,25}</string>
+            </dict>
+            <key>player_left.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,56},{25,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,25}}</string>
+                <key>sourceSize</key>
+                <string>{25,25}</string>
+            </dict>
+            <key>player_right.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,29},{25,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,25}}</string>
+                <key>sourceSize</key>
+                <string>{25,25}</string>
+            </dict>
+            <key>player_up.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -114,13 +166,13 @@
             <key>format</key>
             <integer>2</integer>
             <key>realTextureFileName</key>
-            <string>block_world.png</string>
+            <string>player.png</string>
             <key>size</key>
-            <string>{64,128}</string>
+            <string>{128,128}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:7318fbfca038e10936964f5ae8a51302$</string>
+            <string>$TexturePacker:SmartUpdate:cb3d04023abb05175ad23e84a2d702b8$</string>
             <key>textureFileName</key>
-            <string>block_world.png</string>
+            <string>player.png</string>
         </dict>
     </dict>
 </plist>
