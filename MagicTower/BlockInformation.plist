@@ -8,7 +8,7 @@
 			<key>ID</key>
 			<string>Air</string>
 			<key>Type</key>
-			<string>Block</string>
+			<string>Air</string>
 			<key>UsingImage</key>
 			<string>map_ground_0.png</string>
 			<key>AnimationID</key>
@@ -18,7 +18,7 @@
 			<key>ID</key>
 			<string>Wall</string>
 			<key>Type</key>
-			<string>Block</string>
+			<string>Wall</string>
 			<key>UsingImage</key>
 			<string>map_wall.png</string>
 			<key>AnimationID</key>
@@ -28,7 +28,7 @@
 			<key>ID</key>
 			<string>RedSea</string>
 			<key>Type</key>
-			<string>Block</string>
+			<string>Wall</string>
 			<key>UsingImage</key>
 			<string>map_radSea_0.png</string>
 			<key>AnimationID</key>
@@ -38,7 +38,7 @@
 			<key>ID</key>
 			<string>Void</string>
 			<key>Type</key>
-			<string>Block</string>
+			<string>Wall</string>
 			<key>UsingImage</key>
 			<string>map_void_0.png</string>
 			<key>AnimationID</key>
@@ -48,7 +48,7 @@
 			<key>ID</key>
 			<string>Upstairs</string>
 			<key>Type</key>
-			<string>Block</string>
+			<string>Upstairs</string>
 			<key>UsingImage</key>
 			<string>map_upstairs.png</string>
 			<key>AnimationID</key>
@@ -58,7 +58,7 @@
 			<key>ID</key>
 			<string>Downstairs</string>
 			<key>Type</key>
-			<string>Block</string>
+			<string>Downstairs</string>
 			<key>UsingImage</key>
 			<string>map_downstairs.png</string>
 			<key>AnimationID</key>
@@ -73,6 +73,8 @@
 			<string>RedHeadMonster_0.png</string>
 			<key>AnimationID</key>
 			<string>RedHeadMonsterAnimation</string>
+			<key>HP</key>
+			<integer>70</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -83,6 +85,8 @@
 			<string>GreenHeadMonster_0.png</string>
 			<key>AnimationID</key>
 			<string>GreenHeadMonsterAnimation</string>
+			<key>HP</key>
+			<integer>50</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -93,6 +97,8 @@
 			<string>SmallBat_0.png</string>
 			<key>AnimationID</key>
 			<string>SmallBatAnimation</string>
+			<key>HP</key>
+			<integer>100</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -103,6 +109,8 @@
 			<string>SkullHuman_0.png</string>
 			<key>AnimationID</key>
 			<string>SkullHumanAnimation</string>
+			<key>HP</key>
+			<integer>110</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -113,6 +121,8 @@
 			<string>BlackHeadMonster_0.png</string>
 			<key>AnimationID</key>
 			<string>BlackHeadMonsterAnimation</string>
+			<key>HP</key>
+			<integer>200</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -123,6 +133,8 @@
 			<string>SkullGuard_0.png</string>
 			<key>AnimationID</key>
 			<string>SkullGuardAnimation</string>
+			<key>HP</key>
+			<integer>150</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -133,6 +145,8 @@
 			<string>JuniorMage_0.png</string>
 			<key>AnimationID</key>
 			<string>JuniorMageAnimation</string>
+			<key>HP</key>
+			<integer>125</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -143,6 +157,8 @@
 			<string>BigBat_0.png</string>
 			<key>AnimationID</key>
 			<string>BigBatAnimation</string>
+			<key>HP</key>
+			<integer>150</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -153,6 +169,8 @@
 			<string>MonsterFaceHuman_0.png</string>
 			<key>AnimationID</key>
 			<string>MonsterFaceHumanAnimation</string>
+			<key>HP</key>
+			<integer>300</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -163,6 +181,8 @@
 			<string>SkullOfficer_0.png</string>
 			<key>AnimationID</key>
 			<string>SkullOfficerAnimation</string>
+			<key>HP</key>
+			<integer>400</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -173,6 +193,8 @@
 			<string>StoneMonster_0.png</string>
 			<key>AnimationID</key>
 			<string>StoneMonsterAnimation</string>
+			<key>HP</key>
+			<integer>500</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -183,6 +205,8 @@
 			<string>BrownMage_0.png</string>
 			<key>AnimationID</key>
 			<string>BrownMageAnimation</string>
+			<key>HP</key>
+			<integer>250</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -193,6 +217,8 @@
 			<string>JuniorGuard_0.png</string>
 			<key>AnimationID</key>
 			<string>JuniorGuardAnimation</string>
+			<key>HP</key>
+			<integer>450</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -203,6 +229,8 @@
 			<string>RedBat_0.png</string>
 			<key>AnimationID</key>
 			<string>RedBatAnimation</string>
+			<key>HP</key>
+			<integer>550</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -213,6 +241,8 @@
 			<string>HighMage_0.png</string>
 			<key>AnimationID</key>
 			<string>HighMageAnimation</string>
+			<key>HP</key>
+			<integer>100</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -223,6 +253,8 @@
 			<string>StrangeMonster_0.png</string>
 			<key>AnimationID</key>
 			<string>StrangeMonsterAnimation</string>
+			<key>HP</key>
+			<integer>700</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -233,6 +265,8 @@
 			<string>WhiteWarrior_0.png</string>
 			<key>AnimationID</key>
 			<string>WhiteWarriorAnimation</string>
+			<key>HP</key>
+			<integer>1300</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -243,6 +277,8 @@
 			<string>GoldGuard_0.png</string>
 			<key>AnimationID</key>
 			<string>GoldGuardAnimation</string>
+			<key>HP</key>
+			<integer>850</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -253,6 +289,8 @@
 			<string>RedMage_0.png</string>
 			<key>AnimationID</key>
 			<string>RedMageAnimation</string>
+			<key>HP</key>
+			<integer>500</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -263,6 +301,8 @@
 			<string>MonsterFaceWarrior_0.png</string>
 			<key>AnimationID</key>
 			<string>MonsterFaceWarriorAnimation</string>
+			<key>HP</key>
+			<integer>900</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -273,6 +313,8 @@
 			<string>MingGuard_0.png</string>
 			<key>AnimationID</key>
 			<string>MingGuardAnimation</string>
+			<key>HP</key>
+			<integer>1250</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -283,6 +325,8 @@
 			<string>HighGuard_0.png</string>
 			<key>AnimationID</key>
 			<string>HighGuardAnimation</string>
+			<key>HP</key>
+			<integer>1500</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -293,6 +337,8 @@
 			<string>Swordsman_0.png</string>
 			<key>AnimationID</key>
 			<string>SwordsmanAnimation</string>
+			<key>HP</key>
+			<integer>1200</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -303,6 +349,8 @@
 			<string>MingWarrior_0.png</string>
 			<key>AnimationID</key>
 			<string>MingWarriorAnimation</string>
+			<key>HP</key>
+			<integer>2000</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -313,6 +361,8 @@
 			<string>GoldOfficer_0.png</string>
 			<key>AnimationID</key>
 			<string>GoldOfficerAnimation</string>
+			<key>HP</key>
+			<integer>900</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -323,6 +373,8 @@
 			<string>LingMage_0.png</string>
 			<key>AnimationID</key>
 			<string>LingMageAnimation</string>
+			<key>HP</key>
+			<integer>1500</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -333,6 +385,8 @@
 			<string>MingOfficer_0.png</string>
 			<key>AnimationID</key>
 			<string>MingOfficerAnimation</string>
+			<key>HP</key>
+			<integer>2500</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -343,6 +397,8 @@
 			<string>LingWarrior_0.png</string>
 			<key>AnimationID</key>
 			<string>LingWarriorAnimation</string>
+			<key>HP</key>
+			<integer>1200</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -353,6 +409,8 @@
 			<string>RedKing_0.png</string>
 			<key>AnimationID</key>
 			<string>RedKingAnimation</string>
+			<key>HP</key>
+			<integer>15000</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -363,6 +421,8 @@
 			<string>ShadowWarrior_0.png</string>
 			<key>AnimationID</key>
 			<string>ShadowWarriorAnimation</string>
+			<key>HP</key>
+			<integer>3100</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -373,6 +433,8 @@
 			<string>MingLingKing_0.png</string>
 			<key>AnimationID</key>
 			<string>MingLingKingAnimation</string>
+			<key>HP</key>
+			<integer>30000</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
