@@ -75,6 +75,16 @@
 			<string>RedHeadMonsterAnimation</string>
 			<key>HP</key>
 			<integer>70</integer>
+			<key>Attack</key>
+			<integer>15</integer>
+			<key>Defence</key>
+			<integer>2</integer>
+			<key>Name</key>
+			<string>红头怪</string>
+			<key>Money</key>
+			<integer>2</integer>
+			<key>Exp</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -87,6 +97,16 @@
 			<string>GreenHeadMonsterAnimation</string>
 			<key>HP</key>
 			<integer>50</integer>
+			<key>Attack</key>
+			<integer>20</integer>
+			<key>Defence</key>
+			<integer>1</integer>
+			<key>Name</key>
+			<string>绿头怪</string>
+			<key>Money</key>
+			<integer>1</integer>
+			<key>Exp</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -99,6 +119,16 @@
 			<string>SmallBatAnimation</string>
 			<key>HP</key>
 			<integer>100</integer>
+			<key>Attack</key>
+			<integer>20</integer>
+			<key>Defence</key>
+			<integer>5</integer>
+			<key>Name</key>
+			<string>小蝙蝠</string>
+			<key>Money</key>
+			<integer>3</integer>
+			<key>Exp</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -111,6 +141,16 @@
 			<string>SkullHumanAnimation</string>
 			<key>HP</key>
 			<integer>110</integer>
+			<key>Attack</key>
+			<integer>25</integer>
+			<key>Defence</key>
+			<integer>5</integer>
+			<key>Name</key>
+			<string>骷髅人</string>
+			<key>Money</key>
+			<integer>5</integer>
+			<key>Exp</key>
+			<integer>4</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -123,6 +163,16 @@
 			<string>BlackHeadMonsterAnimation</string>
 			<key>HP</key>
 			<integer>200</integer>
+			<key>Attack</key>
+			<integer>35</integer>
+			<key>Defence</key>
+			<integer>10</integer>
+			<key>Name</key>
+			<string>青头怪</string>
+			<key>Money</key>
+			<integer>5</integer>
+			<key>Exp</key>
+			<integer>5</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -135,6 +185,16 @@
 			<string>SkullGuardAnimation</string>
 			<key>HP</key>
 			<integer>150</integer>
+			<key>Attack</key>
+			<integer>40</integer>
+			<key>Defence</key>
+			<integer>20</integer>
+			<key>Name</key>
+			<string>骷髅士兵</string>
+			<key>Money</key>
+			<integer>8</integer>
+			<key>Exp</key>
+			<integer>6</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -147,6 +207,16 @@
 			<string>JuniorMageAnimation</string>
 			<key>HP</key>
 			<integer>125</integer>
+			<key>Attack</key>
+			<integer>50</integer>
+			<key>Defence</key>
+			<integer>25</integer>
+			<key>Name</key>
+			<string>初级法师</string>
+			<key>Money</key>
+			<integer>10</integer>
+			<key>Exp</key>
+			<integer>7</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -159,6 +229,16 @@
 			<string>BigBatAnimation</string>
 			<key>HP</key>
 			<integer>150</integer>
+			<key>Attack</key>
+			<integer>65</integer>
+			<key>Defence</key>
+			<integer>30</integer>
+			<key>Name</key>
+			<string>大蝙蝠</string>
+			<key>Money</key>
+			<integer>10</integer>
+			<key>Exp</key>
+			<integer>8</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -171,6 +251,16 @@
 			<string>MonsterFaceHumanAnimation</string>
 			<key>HP</key>
 			<integer>300</integer>
+			<key>Attack</key>
+			<integer>75</integer>
+			<key>Defence</key>
+			<integer>45</integer>
+			<key>Name</key>
+			<string>兽面人</string>
+			<key>Money</key>
+			<integer>13</integer>
+			<key>Exp</key>
+			<integer>10</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -183,6 +273,16 @@
 			<string>SkullOfficerAnimation</string>
 			<key>HP</key>
 			<integer>400</integer>
+			<key>Attack</key>
+			<integer>90</integer>
+			<key>Defence</key>
+			<integer>50</integer>
+			<key>Name</key>
+			<string>骷髅队长</string>
+			<key>Money</key>
+			<integer>15</integer>
+			<key>Exp</key>
+			<integer>12</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -195,6 +295,16 @@
 			<string>StoneMonsterAnimation</string>
 			<key>HP</key>
 			<integer>500</integer>
+			<key>Attack</key>
+			<integer>115</integer>
+			<key>Defence</key>
+			<integer>65</integer>
+			<key>Name</key>
+			<string>石头怪人</string>
+			<key>Money</key>
+			<integer>15</integer>
+			<key>Exp</key>
+			<integer>15</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -207,6 +317,16 @@
 			<string>BrownMageAnimation</string>
 			<key>HP</key>
 			<integer>250</integer>
+			<key>Attack</key>
+			<integer>120</integer>
+			<key>Defence</key>
+			<integer>70</integer>
+			<key>Name</key>
+			<string>麻衣法师</string>
+			<key>Money</key>
+			<integer>20</integer>
+			<key>Exp</key>
+			<integer>17</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -219,6 +339,16 @@
 			<string>JuniorGuardAnimation</string>
 			<key>HP</key>
 			<integer>450</integer>
+			<key>Attack</key>
+			<integer>150</integer>
+			<key>Defence</key>
+			<integer>90</integer>
+			<key>Name</key>
+			<string>初级卫兵</string>
+			<key>Money</key>
+			<integer>22</integer>
+			<key>Exp</key>
+			<integer>19</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -231,6 +361,16 @@
 			<string>RedBatAnimation</string>
 			<key>HP</key>
 			<integer>550</integer>
+			<key>Attack</key>
+			<integer>160</integer>
+			<key>Defence</key>
+			<integer>90</integer>
+			<key>Name</key>
+			<string>红蝙蝠</string>
+			<key>Money</key>
+			<integer>25</integer>
+			<key>Exp</key>
+			<integer>20</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -243,6 +383,16 @@
 			<string>HighMageAnimation</string>
 			<key>HP</key>
 			<integer>100</integer>
+			<key>Attack</key>
+			<integer>200</integer>
+			<key>Defence</key>
+			<integer>110</integer>
+			<key>Name</key>
+			<string>高级法师</string>
+			<key>Money</key>
+			<integer>30</integer>
+			<key>Exp</key>
+			<integer>58</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -255,6 +405,16 @@
 			<string>StrangeMonsterAnimation</string>
 			<key>HP</key>
 			<integer>700</integer>
+			<key>Attack</key>
+			<integer>250</integer>
+			<key>Defence</key>
+			<integer>125</integer>
+			<key>Name</key>
+			<string>怪王</string>
+			<key>Money</key>
+			<integer>32</integer>
+			<key>Exp</key>
+			<integer>30</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -267,6 +427,16 @@
 			<string>WhiteWarriorAnimation</string>
 			<key>HP</key>
 			<integer>1300</integer>
+			<key>Attack</key>
+			<integer>300</integer>
+			<key>Defence</key>
+			<integer>150</integer>
+			<key>Name</key>
+			<string>白衣武士</string>
+			<key>Money</key>
+			<integer>40</integer>
+			<key>Exp</key>
+			<integer>35</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -279,6 +449,16 @@
 			<string>GoldGuardAnimation</string>
 			<key>HP</key>
 			<integer>850</integer>
+			<key>Attack</key>
+			<integer>350</integer>
+			<key>Defence</key>
+			<integer>200</integer>
+			<key>Name</key>
+			<string>金卫士</string>
+			<key>Money</key>
+			<integer>45</integer>
+			<key>Exp</key>
+			<integer>40</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -291,6 +471,16 @@
 			<string>RedMageAnimation</string>
 			<key>HP</key>
 			<integer>500</integer>
+			<key>Attack</key>
+			<integer>400</integer>
+			<key>Defence</key>
+			<integer>260</integer>
+			<key>Name</key>
+			<string>红衣法师</string>
+			<key>Money</key>
+			<integer>47</integer>
+			<key>Exp</key>
+			<integer>45</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -303,6 +493,16 @@
 			<string>MonsterFaceWarriorAnimation</string>
 			<key>HP</key>
 			<integer>900</integer>
+			<key>Attack</key>
+			<integer>450</integer>
+			<key>Defence</key>
+			<integer>330</integer>
+			<key>Name</key>
+			<string>兽面武士</string>
+			<key>Money</key>
+			<integer>50</integer>
+			<key>Exp</key>
+			<integer>50</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -315,6 +515,16 @@
 			<string>MingGuardAnimation</string>
 			<key>HP</key>
 			<integer>1250</integer>
+			<key>Attack</key>
+			<integer>500</integer>
+			<key>Defence</key>
+			<integer>400</integer>
+			<key>Name</key>
+			<string>冥卫兵</string>
+			<key>Money</key>
+			<integer>55</integer>
+			<key>Exp</key>
+			<integer>55</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -327,6 +537,16 @@
 			<string>HighGuardAnimation</string>
 			<key>HP</key>
 			<integer>1500</integer>
+			<key>Attack</key>
+			<integer>560</integer>
+			<key>Defence</key>
+			<integer>460</integer>
+			<key>Name</key>
+			<string>高级卫兵</string>
+			<key>Money</key>
+			<integer>60</integer>
+			<key>Exp</key>
+			<integer>60</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -339,6 +559,16 @@
 			<string>SwordsmanAnimation</string>
 			<key>HP</key>
 			<integer>1200</integer>
+			<key>Attack</key>
+			<integer>620</integer>
+			<key>Defence</key>
+			<integer>520</integer>
+			<key>Name</key>
+			<string>双手剑士</string>
+			<key>Money</key>
+			<integer>65</integer>
+			<key>Exp</key>
+			<integer>75</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -351,6 +581,16 @@
 			<string>MingWarriorAnimation</string>
 			<key>HP</key>
 			<integer>2000</integer>
+			<key>Attack</key>
+			<integer>680</integer>
+			<key>Defence</key>
+			<integer>590</integer>
+			<key>Name</key>
+			<string>冥战士</string>
+			<key>Money</key>
+			<integer>70</integer>
+			<key>Exp</key>
+			<integer>65</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -363,6 +603,16 @@
 			<string>GoldOfficerAnimation</string>
 			<key>HP</key>
 			<integer>900</integer>
+			<key>Attack</key>
+			<integer>750</integer>
+			<key>Defence</key>
+			<integer>650</integer>
+			<key>Name</key>
+			<string>金队长</string>
+			<key>Money</key>
+			<integer>77</integer>
+			<key>Exp</key>
+			<integer>70</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -375,6 +625,16 @@
 			<string>LingMageAnimation</string>
 			<key>HP</key>
 			<integer>1500</integer>
+			<key>Attack</key>
+			<integer>830</integer>
+			<key>Defence</key>
+			<integer>730</integer>
+			<key>Name</key>
+			<string>灵法师</string>
+			<key>Money</key>
+			<integer>80</integer>
+			<key>Exp</key>
+			<integer>70</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -387,6 +647,16 @@
 			<string>MingOfficerAnimation</string>
 			<key>HP</key>
 			<integer>2500</integer>
+			<key>Attack</key>
+			<integer>900</integer>
+			<key>Defence</key>
+			<integer>850</integer>
+			<key>Name</key>
+			<string>冥队长</string>
+			<key>Money</key>
+			<integer>84</integer>
+			<key>Exp</key>
+			<integer>75</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -399,6 +669,16 @@
 			<string>LingWarriorAnimation</string>
 			<key>HP</key>
 			<integer>1200</integer>
+			<key>Attack</key>
+			<integer>980</integer>
+			<key>Defence</key>
+			<integer>900</integer>
+			<key>Name</key>
+			<string>灵武士</string>
+			<key>Money</key>
+			<integer>88</integer>
+			<key>Exp</key>
+			<integer>75</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -411,6 +691,16 @@
 			<string>RedKingAnimation</string>
 			<key>HP</key>
 			<integer>15000</integer>
+			<key>Attack</key>
+			<integer>1000</integer>
+			<key>Defence</key>
+			<integer>1000</integer>
+			<key>Name</key>
+			<string>红衣魔王</string>
+			<key>Money</key>
+			<integer>100</integer>
+			<key>Exp</key>
+			<integer>100</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -423,6 +713,16 @@
 			<string>ShadowWarriorAnimation</string>
 			<key>HP</key>
 			<integer>3100</integer>
+			<key>Attack</key>
+			<integer>1150</integer>
+			<key>Defence</key>
+			<integer>1050</integer>
+			<key>Name</key>
+			<string>影子战士</string>
+			<key>Money</key>
+			<integer>92</integer>
+			<key>Exp</key>
+			<integer>80</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -435,6 +735,16 @@
 			<string>MingLingKingAnimation</string>
 			<key>HP</key>
 			<integer>30000</integer>
+			<key>Attack</key>
+			<integer>1700</integer>
+			<key>Defence</key>
+			<integer>1500</integer>
+			<key>Name</key>
+			<string>冥灵魔王</string>
+			<key>Money</key>
+			<integer>250</integer>
+			<key>Exp</key>
+			<integer>220</integer>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -445,6 +755,15 @@
 			<string>RedKey_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>RedKey</string>
+					<key>Value</key>
+					<string>1</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -455,6 +774,15 @@
 			<string>YellowKey_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>YellowKey</string>
+					<key>Value</key>
+					<string>1</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -465,6 +793,15 @@
 			<string>BlueKey_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>BlueKey</string>
+					<key>Value</key>
+					<string>1</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -475,6 +812,15 @@
 			<string>RedStone_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Attack</string>
+					<key>Value</key>
+					<string>3</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -485,6 +831,15 @@
 			<string>SmallBottle_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>HP</string>
+					<key>Value</key>
+					<string>200</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -495,6 +850,15 @@
 			<string>BlueStone_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Defence</string>
+					<key>Value</key>
+					<string>3</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -505,6 +869,15 @@
 			<string>BIgBottle_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>HP</string>
+					<key>Value</key>
+					<string>500</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -515,6 +888,15 @@
 			<string>IronSwords_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Attack</string>
+					<key>Value</key>
+					<string>10</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -525,6 +907,27 @@
 			<string>KeyBox_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>RedKey</string>
+					<key>Value</key>
+					<string>1</string>
+				</dict>
+				<dict>
+					<key>Type</key>
+					<string>BlueKey</string>
+					<key>Value</key>
+					<string>1</string>
+				</dict>
+				<dict>
+					<key>Type</key>
+					<string>YellowKey</string>
+					<key>Value</key>
+					<string>1</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -535,6 +938,15 @@
 			<string>IronShield_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Defence</string>
+					<key>Value</key>
+					<string>10</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -545,6 +957,15 @@
 			<string>GoldCoin_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Money</string>
+					<key>Value</key>
+					<string>300</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -575,6 +996,15 @@
 			<string>SuperSwords_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Attack</string>
+					<key>Value</key>
+					<string>70</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -585,6 +1015,15 @@
 			<string>GoldShield_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Defence</string>
+					<key>Value</key>
+					<string>85</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -615,6 +1054,15 @@
 			<string>BestSwords_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Attack</string>
+					<key>Value</key>
+					<string>150</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -623,6 +1071,173 @@
 			<string>Item</string>
 			<key>UsingImage</key>
 			<string>BestShield_0.png</string>
+			<key>AnimationID</key>
+			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Defence</string>
+					<key>Value</key>
+					<string>190</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>RedDoor</string>
+			<key>Type</key>
+			<string>Door</string>
+			<key>UsingImage</key>
+			<string>Red_Door.png</string>
+			<key>AnimationID</key>
+			<string></string>
+			<key>DoorAnimationType</key>
+			<string>TwoHalf</string>
+			<key>LeftDoorImage</key>
+			<string>Red_Door_Left.png</string>
+			<key>RightDoorImage</key>
+			<string>Red_Door_Right.png</string>
+			<key>Color</key>
+			<string>Red</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>BlueDoor</string>
+			<key>Type</key>
+			<string>Door</string>
+			<key>UsingImage</key>
+			<string>Blue_Door.png</string>
+			<key>AnimationID</key>
+			<string></string>
+			<key>DoorAnimationType</key>
+			<string>TwoHalf</string>
+			<key>LeftDoorImage</key>
+			<string>Blue_Door_Left.png</string>
+			<key>RightDoorImage</key>
+			<string>Blue_Door_Right.png</string>
+			<key>Color</key>
+			<string>Blue</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>YellowDoor</string>
+			<key>Type</key>
+			<string>Door</string>
+			<key>UsingImage</key>
+			<string>Yellow_Door.png</string>
+			<key>AnimationID</key>
+			<string></string>
+			<key>DoorAnimationType</key>
+			<string>TwoHalf</string>
+			<key>LeftDoorImage</key>
+			<string>Yellow_Door_Left.png</string>
+			<key>RightDoorImage</key>
+			<string>Yellow_Door_Right.png</string>
+			<key>Color</key>
+			<string>Yellow</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>GateDoor</string>
+			<key>Type</key>
+			<string>Door</string>
+			<key>UsingImage</key>
+			<string>Gate_Door.png</string>
+			<key>AnimationID</key>
+			<string></string>
+			<key>DoorAnimationType</key>
+			<string>OneBody</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>SuperDoor</string>
+			<key>Type</key>
+			<string>Door</string>
+			<key>UsingImage</key>
+			<string>Super_Door.png</string>
+			<key>AnimationID</key>
+			<string></string>
+			<key>DoorAnimationType</key>
+			<string>NoAnimation</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>Fairy</string>
+			<key>Type</key>
+			<string>Person</string>
+			<key>UsingImage</key>
+			<string>fairy_0.png</string>
+			<key>AnimationID</key>
+			<string>FairyAnimation</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>BusinessWoman</string>
+			<key>Type</key>
+			<string>Person</string>
+			<key>UsingImage</key>
+			<string>businessWoman_0.png</string>
+			<key>AnimationID</key>
+			<string>BusinessWomanAnimation</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>MysteriousOldMan</string>
+			<key>Type</key>
+			<string>Person</string>
+			<key>UsingImage</key>
+			<string>mysteriousOldMan_0.png</string>
+			<key>AnimationID</key>
+			<string>MysteriousOldManAnimation</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>Thief</string>
+			<key>Type</key>
+			<string>Person</string>
+			<key>UsingImage</key>
+			<string>thief_0.png</string>
+			<key>AnimationID</key>
+			<string>ThiefAnimation</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>Princess</string>
+			<key>Type</key>
+			<string>Person</string>
+			<key>UsingImage</key>
+			<string>princess_0.png</string>
+			<key>AnimationID</key>
+			<string>PrincessAnimation</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>ShopLeft</string>
+			<key>Type</key>
+			<string>Block</string>
+			<key>UsingImage</key>
+			<string>shopLeft_0.png</string>
+			<key>AnimationID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>ShopMiddle</string>
+			<key>Type</key>
+			<string>Person</string>
+			<key>UsingImage</key>
+			<string>shopMiddle_0.png</string>
+			<key>AnimationID</key>
+			<string>ShopMiddleAnimation</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>ShopRight</string>
+			<key>Type</key>
+			<string>Block</string>
+			<key>UsingImage</key>
+			<string>shopRight_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
 		</dict>

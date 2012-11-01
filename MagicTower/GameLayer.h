@@ -9,10 +9,17 @@
 #import <UIKit/UIKit.h>
 
 #import "cocos2d.h"
+#import "HitLayer.h"
+#import "BuyLayer.h"
 
-@interface GameLayer : CCLayer{
+@interface GameLayer : CCLayer<HitLayerDelegate,BuyLayerDelegate>{
 
 }
+
+typedef enum{
+    MTStairsWayUpstairs,
+    MTStairsWayDownstairs,
+}MTStairsWay;
 
 +(id)scene;
 
