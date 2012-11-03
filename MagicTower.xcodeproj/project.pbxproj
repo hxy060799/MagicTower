@@ -134,7 +134,6 @@
 		A91FE1341643CD5500A85DD0 /* DialogLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A91FE1331643CD5500A85DD0 /* DialogLayer.m */; };
 		A91FE1371643D0A700A85DD0 /* dialogBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A91FE1361643D0A700A85DD0 /* dialogBackground.png */; };
 		A91FE1391643DA7400A85DD0 /* DialogsInformation.plist in Resources */ = {isa = PBXBuildFile; fileRef = A91FE1381643DA7400A85DD0 /* DialogsInformation.plist */; };
-		A928CAA11643F75B00747945 /* MTPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = A928CAA01643F75B00747945 /* MTPlot.m */; };
 		A929C2C2163395A900BB4CEE /* gameBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = A929C2C1163395A900BB4CEE /* gameBackground.png */; };
 		A929C2C5163395B700BB4CEE /* block_world.plist in Resources */ = {isa = PBXBuildFile; fileRef = A929C2C3163395B700BB4CEE /* block_world.plist */; };
 		A929C2C6163395B700BB4CEE /* block_world.png in Resources */ = {isa = PBXBuildFile; fileRef = A929C2C4163395B700BB4CEE /* block_world.png */; };
@@ -423,8 +422,6 @@
 		A91FE1331643CD5500A85DD0 /* DialogLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogLayer.m; sourceTree = "<group>"; };
 		A91FE1361643D0A700A85DD0 /* dialogBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialogBackground.png; sourceTree = "<group>"; };
 		A91FE1381643DA7400A85DD0 /* DialogsInformation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DialogsInformation.plist; sourceTree = "<group>"; };
-		A928CA9F1643F75B00747945 /* MTPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPlot.h; sourceTree = "<group>"; };
-		A928CAA01643F75B00747945 /* MTPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPlot.m; sourceTree = "<group>"; };
 		A929C2C1163395A900BB4CEE /* gameBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gameBackground.png; sourceTree = "<group>"; };
 		A929C2C3163395B700BB4CEE /* block_world.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = block_world.plist; sourceTree = "<group>"; };
 		A929C2C4163395B700BB4CEE /* block_world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block_world.png; sourceTree = "<group>"; };
@@ -523,8 +520,6 @@
 				A9469C00163FF94F00880DD7 /* HitLayer.m */,
 				A98444DB16415CDF00B2BC4E /* BuyLayer.h */,
 				A98444DC16415CDF00B2BC4E /* BuyLayer.m */,
-				A928CA9F1643F75B00747945 /* MTPlot.h */,
-				A928CAA01643F75B00747945 /* MTPlot.m */,
 				A904EF6816284BEB000E00D4 /* Resources */,
 				A904EF8016284BEC000E00D4 /* libs */,
 				A904F0D416284BF8000E00D4 /* Supporting Files */,
@@ -1134,7 +1129,6 @@
 				A9469C01163FF94F00880DD7 /* HitLayer.m in Sources */,
 				A98444DD16415CDF00B2BC4E /* BuyLayer.m in Sources */,
 				A91FE1341643CD5500A85DD0 /* DialogLayer.m in Sources */,
-				A928CAA11643F75B00747945 /* MTPlot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,17 +28,17 @@
 -(id)init{
     if(self=[super init]){
         /*
-        self.redKeyCount=10;
-        self.yellowKeyCount=10;
-        self.blueKeyCount=10;
-        
-        self.money=500;
-        self.exp=500;
-        self.level=1;
-        
-        self.attack=10000;
-        self.defence=10000;
-        self.hp=1000;
+         self.redKeyCount=10;
+         self.yellowKeyCount=10;
+         self.blueKeyCount=10;
+         
+         self.money=500;
+         self.exp=500;
+         self.level=1;
+         
+         self.attack=10000;
+         self.defence=10000;
+         self.hp=1000;
          */
         
         self.redKeyCount=0;
@@ -74,7 +74,7 @@
     if(hurtA<0)hurtA=0;
     if(hurtB<0)hurtB=0;
     NSLog(@"hurtA=%d,hpA=%d hurtB=%d,hpB=%d",hurtA,hp,hurtB,hpB);
-
+    
     if(hurtA<=0&&hurtB>0){        
         NSLog(@"AWin");
         dieTimeB=(hpB%hurtB>0)?hpB/hurtB+1:hpB/hurtB;
@@ -94,7 +94,7 @@
         }else{
             return 2*dieTimeB-1;
         }
-    
+        
         NSLog(@"ADieTime%i.BDieTime%i",dieTimeA,dieTimeB);
     }
 }
@@ -123,16 +123,8 @@
     return resultDictionary;
 }
 
--(int)setPlayerInformationWithString:(NSString*)infName Value:(NSString*)value Append:(BOOL)append{
-    
-    if([value isEqualToString:@"0.3x"]){
-        [self setPlayerInformationWithString:infName Value:[NSString stringWithFormat:@"%i",(int)(0.3*[self getPlayerInformationWithString:infName])] Append:YES];
-    }
-    if([value isEqualToString:@"2x"]){
-        [self setPlayerInformationWithString:infName Value:[NSString stringWithFormat:@"%i",(int)(2*[self getPlayerInformationWithString:infName])] Append:NO];
-    }
-    
-    int valueToSet=[value intValue];
+-(int)setPlayerInformationWithString:(NSString*)infName IntValue:(int)value Append:(BOOL)append{
+    int valueToSet=value;//[value intValue];
     
     if([infName isEqualToString:@"RedKey"]){
         self.redKeyCount=(append)?self.redKeyCount+valueToSet:valueToSet;
@@ -168,10 +160,25 @@
         NSLog(@"No match information name!");
         return -1;
     }
+    
+}
+
+-(int)setPlayerInformationWithString:(NSString*)infName StringValue:(NSString*)value Append:(BOOL)append{
+    
+    int valueToSet=0;
+    if([[value substringFromIndex:value.length-1]isEqualToString:@"x"]){
+        valueToSet=[self getPlayerInformationWithString:infName]*[[value substringToIndex:value.length-1]intValue];
+    }else{
+        valueToSet=[value intValue];
+    }
+    
+    [self setPlayerInformationWithString:infName IntValue:valueToSet Append:YES];
+    
+    return 0;
 }
 
 -(int)getPlayerInformationWithString:(NSString*)infName{
-    return [self setPlayerInformationWithString:infName Value:0 Append:YES];
+    return [self setPlayerInformationWithString:infName IntValue:0 Append:YES];
 }
 
 -(void)dealloc{

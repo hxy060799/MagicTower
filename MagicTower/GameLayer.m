@@ -272,7 +272,7 @@
             return;
         }
     }
-    [player setPlayerInformationWithString:thingGetType Value:thingGetValue Append:YES];
+    [player setPlayerInformationWithString:thingGetType StringValue:thingGetValue Append:YES];
     [self updateInformationLabel];
 }
 
@@ -477,7 +477,7 @@
             NSString *thingType=[thingToGive objectForKey:@"Type"];
             NSString *thingValue=[thingToGive objectForKey:@"Value"];
             
-            [player setPlayerInformationWithString:thingType Value:thingValue Append:YES];
+            [player setPlayerInformationWithString:thingType StringValue:thingValue Append:YES];
             [self updateInformationLabel];
         }
         
@@ -561,7 +561,7 @@
             CCMoveBy *leftDoorMoveBy=[CCMoveBy actionWithDuration:0.2 position:ccp(-13,0)];
             CCMoveBy *rightDoorMoveBy=[CCMoveBy actionWithDuration:0.2 position:ccp(13,0)];
             CCCallBlock *animationEndBlock=[CCCallBlock actionWithBlock:^(void){
-                [self setBlockZWithX:xTo Y:yTo Z:1];
+                [self setBlockZWithX:xTo Y:yTo Z:2];
                 [leftDoor removeFromParentAndCleanup:YES];
                 [rightDoor removeFromParentAndCleanup:YES];
                 isRunningAnimation=NO;
@@ -637,7 +637,6 @@
         [self replaceBlockWithFloor:currentFloor X:xTo Y:yTo Block:0];
     }else if([blockType isEqualToString:@"Thief"]) {
         
-        
         if(!gamePlot.thiefFirstTalkedTo){
             isRunningAnimation=YES;
             
@@ -682,7 +681,7 @@
 
 -(void)dialogEndWithThingsToGive:(NSArray*)thingsToGive Layer:(DialogLayer *)layer ExtraInformation:(NSString *)extraInf{
     for(NSDictionary *thingToGive in thingsToGive){
-        [player setPlayerInformationWithString:[thingToGive objectForKey:@"Type"] Value:[thingToGive objectForKey:@"Value"] Append:YES];
+        [player setPlayerInformationWithString:[thingToGive objectForKey:@"Type"] StringValue:[thingToGive objectForKey:@"Value"] Append:YES];
     }
     [layer removeFromParentAndCleanup:YES];
     [self updateInformationLabel];
