@@ -11,8 +11,9 @@
 #import "cocos2d.h"
 #import "HitLayer.h"
 #import "BuyLayer.h"
+#import "DialogLayer.h"
 
-@interface GameLayer : CCLayer<HitLayerDelegate,BuyLayerDelegate>{
+@interface GameLayer : CCLayer<HitLayerDelegate,BuyLayerDelegate,DialogLayerDelegate>{
 
 }
 

@@ -976,12 +976,21 @@
 			<string>SmallWings_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Level</string>
+					<key>Value</key>
+					<string>1</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
 			<string>LuckyCross</string>
 			<key>Type</key>
-			<string>Item</string>
+			<string>LuckyCross</string>
 			<key>UsingImage</key>
 			<string>LuckyCross_0.png</string>
 			<key>AnimationID</key>
@@ -1034,6 +1043,15 @@
 			<string>BigWings_0.png</string>
 			<key>AnimationID</key>
 			<string>BigWingsAnimation</string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Level</string>
+					<key>Value</key>
+					<string>3</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -1044,6 +1062,15 @@
 			<string>SuperWater_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>HP</string>
+					<key>Value</key>
+					<string>2x</string>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>ID</key>
@@ -1165,7 +1192,7 @@
 			<key>ID</key>
 			<string>Fairy</string>
 			<key>Type</key>
-			<string>Person</string>
+			<string>Fairy</string>
 			<key>UsingImage</key>
 			<string>fairy_0.png</string>
 			<key>AnimationID</key>
@@ -1195,7 +1222,7 @@
 			<key>ID</key>
 			<string>Thief</string>
 			<key>Type</key>
-			<string>Person</string>
+			<string>Thief</string>
 			<key>UsingImage</key>
 			<string>thief_0.png</string>
 			<key>AnimationID</key>
@@ -1205,7 +1232,7 @@
 			<key>ID</key>
 			<string>Princess</string>
 			<key>Type</key>
-			<string>Person</string>
+			<string>Princess</string>
 			<key>UsingImage</key>
 			<string>princess_0.png</string>
 			<key>AnimationID</key>
@@ -1238,6 +1265,16 @@
 			<string>Block</string>
 			<key>UsingImage</key>
 			<string>shopRight_0.png</string>
+			<key>AnimationID</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>Stove</string>
+			<key>Type</key>
+			<string>Stove</string>
+			<key>UsingImage</key>
+			<string>Stove_0.png</string>
 			<key>AnimationID</key>
 			<string></string>
 		</dict>

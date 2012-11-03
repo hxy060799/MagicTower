@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DialogsInformation</key>
+	<array>
+		<dict>
+			<key>ExtraInf</key>
+			<string>FairyFirst</string>
+			<key>Dialog</key>
+			<array>
+				<string>        勇士：……</string>
+				<string>        仙子：你醒了！</string>
+				<string>        勇士：……\n        你是谁？我在哪里？</string>
+				<string>        仙子：我是这里的仙子，刚才你被这里的小怪打昏了。</string>
+				<string>        勇士：……\n        剑，剑，我的剑呢？</string>
+				<string>        仙子：你的剑被他们抢走了，我只来得及将你救出来。</string>
+				<string>        勇士：那，公主呢？我是来就公主的。</string>
+				<string>        仙子：公主还在里面，你这样进去是打不过里面的小怪的。</string>
+				<string>        勇士：那我怎么办，我答应了国王一定要把公主救出来的，那现在我</string>
+				<string>应该怎么办呢？</string>
+				<string>        仙子：放心吧，我把我的力量借给你，你就可以打赢那些小怪了。</string>
+				<string>不过，你得先帮我去找一样东西，找到了再来这里找我。</string>
+				<string>        勇士：找东西？找什么东西？</string>
+				<string>        仙子：是一个十字架，中间有一颗红色的宝石。</string>
+				<string>        勇士：那个东西有什么用吗？</string>
+				<string>        仙子：我本是这座塔的守护者，可不久前，从北方来了一批恶魔，他们</string>
+				<string>占领了这座塔，竟将我的魔力封在了这个十字架里面，如果你能将它带出</string>
+				<string>塔来，那我的魔力便会慢慢地恢复，到那时候我便可以把力量借给你去救公</string>
+				<string>主了。</string>
+				<string>        仙子：要记住：只用我的魔力才可以打开二十一层的门。</string>
+				<string>        勇士：……\n        好吧，我试试看。</string>
+				<string>        仙子：刚才我去看过了，你的剑被放在了三楼，你的盾在五楼上，而</string>
+				<string>那个十字架被放在七楼。要到七楼，你得先取回你的剑和盾</string>
+				<string>        另外，在塔里的其他楼层上，还有一些存放了好几百年的宝剑和宝物，</string>
+				<string>如果得到它们，对于你对付里面的怪物将有很大的帮助。</string>
+				<string>        勇士：可是，我怎么进去呢？</string>
+				<string>        仙子：我这里有三把钥匙，你先拿去，在塔里面还有很多这样的钥匙，</string>
+				<string>你一定要珍惜使用。</string>
+				<string>        仙子：勇敢的去吧，勇士！</string>
+			</array>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>RedKey</string>
+					<key>Value</key>
+					<string>1</string>
+				</dict>
+				<dict>
+					<key>Type</key>
+					<string>BlueKey</string>
+					<key>Value</key>
+					<string>1</string>
+				</dict>
+				<dict>
+					<key>Type</key>
+					<string>YellowKey</string>
+					<key>Value</key>
+					<string>1</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ExtraInf</key>
+			<string>FairySecond</string>
+			<key>Dialog</key>
+			<array>
+				<string>        勇士：仙子，我已经将那个十字架找到了。</string>
+				<string>        仙子：你做得很好。\n        那么，现在我就开始授予你更强大的能量！</string>
+				<string>        咪啦哆咪哗……</string>
+				<string>        仙子：好了，我已经将你下载奶的能力提升了！</string>
+				<string>        仙子：记住：如果你没有足够的实力的话，不要去第二十一层！在那一</string>
+				<string>层里，你所有的宝物的法力都会失去作用！</string>
+			</array>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Attack</string>
+					<key>Value</key>
+					<string>0.3x</string>
+				</dict>
+				<dict>
+					<key>Type</key>
+					<string>Defence</string>
+					<key>Value</key>
+					<string>0.3x</string>
+				</dict>
+				<dict>
+					<key>Type</key>
+					<string>HP</string>
+					<key>Value</key>
+					<string>0.3x</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ExtraInf</key>
+			<string>ThiefFirst</string>
+			<key>Dialog</key>
+			<array>
+				<string>        勇士：你已经得救了！</string>
+				<string>        小偷：啊，那真是太好了，我又可以在这里面寻宝了！</string>
+				<string>        小偷：哦，还没有自我介绍，我叫杰克，是这附近有名的小偷，什么金</string>
+				<string>银财宝我样样都偷过。</string>
+				<string>        小偷：不过这次运气可不是太好，刚进来就被抓了。</string>
+				<string>        小偷：现在你帮我打开了门，那我就帮你做一件事情吧。</string>
+				<string>        勇士：快走吧，外面还有很多怪物，我可顾不上你。</string>
+				<string>        小偷：不，不，不会有事的。快说吧，叫我做什么？ </string>
+				<string>        勇士：……\n        你会开门吗？</string>
+				<string>        小偷：那当然。</string>
+				<string>        勇士：那就请帮我打开第二层的门吧。</string>
+				<string>        小偷：这个简单，不过，如果你能帮我找到一把嵌了红宝石的铁榔头的</string>
+				<string>话，我还能帮你打通第十八层的路。</string>
+				<string>        勇士：嵌了红宝石的铁榔头？\n        好吧，我帮你找找。</string>
+				<string>        小偷：非常地感谢。一会我便会将第二层的门打开。</string>
+				<string>        小偷：如果你找到那个铁榔头的话，还是来这里找我。</string>
+			</array>
+			<key>ThingsToGive</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>ExtraInf</key>
+			<string>ThiefSecond</string>
+			<key>Dialog</key>
+			<array>
+				<string>        勇士：哈，快看，我找到了什么！</string>
+				<string>        小偷：太好了，这个东西果然在这里。</string>
+				<string>        小偷：好吧，我这就去帮你修好第十八层的路面。</string>
+			</array>
+			<key>ThingsToGive</key>
+			<array/>
+		</dict>
+		<dict>
+			<key>ExtraInf</key>
+			<string>2FloorMan</string>
+			<key>Dialog</key>
+			<array>
+				<string>        勇士：你已经得救了！</string>
+				<string>        神秘老人：哦，我的孩子，真是太感谢你了！这个地方又脏有坏，我真</string>
+				<string>的是快呆不下去了。</string>
+				<string>        勇士：快走吧，我还得救被关在这里的公主。</string>
+				<string>        神秘老人：哦，你是来救公主的，为了表示对你的感谢，这个东西就送</string>
+				<string>给你吧，这还是我年轻的时候用过的，拿着它去解救公主吧！</string>
+			</array>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Attack</string>
+					<key>Value</key>
+					<string>30</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ExtraInf</key>
+			<string>2FloorWoman</string>
+			<key>Dialog</key>
+			<array>
+				<string>        勇士：你已经得救了！</string>
+				<string>        商人：哦，是嘛！真是太感谢你了！我是个商人，不知为什么就被抓到</string>
+				<string>这里来了。</string>
+				<string>的是快呆不下去了。</string>
+				<string>        勇士：快走吧，现在你已经自由了。</string>
+				<string>        商人：哦，对对对，我已经自由了。</string>
+				<string>        商人：那这个东西就给你吧，本来我是准备卖钱的。相信它对你一定很</string>
+				<string>有帮助！</string>
+			</array>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Defence</string>
+					<key>Value</key>
+					<string>30</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ExtraInf</key>
+			<string>15FloorMan</string>
+			<key>Dialog</key>
+			<array>
+				<string>        神秘老人：你好，勇敢的孩子，你终于来到这里了，我将给你一个非常</string>
+				<string>好的宝物，它可以使你的攻击力提升120点。</string>
+				<string>        勇士：好吧，那就将那把剑给我把！</string>
+				<string>        神秘老人：那好吧，这把剑就给你了！</string>
+			</array>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Attack</string>
+					<key>Value</key>
+					<string>120</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ExtraInf</key>
+			<string>15FloorWoman</string>
+			<key>Dialog</key>
+			<array>
+				<string>        商人：啊哈，欢迎你的到来！我这里有一件对你来说非常好的宝物。</string>
+				<string>        勇士：什么宝物？</string>
+				<string>        商人：是这个游戏里最好的盾牌，防御值可以加120点。</string>
+				<string>        勇士：真的吗？那真是太好了！</string>
+				<string>        商人：那这个宝物就是你的了！</string>
+			</array>
+			<key>ThingsToGive</key>
+			<array>
+				<dict>
+					<key>Type</key>
+					<string>Defence</string>
+					<key>Value</key>
+					<string>120</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>ExtraInf</key>
+			<string>Princess</string>
+			<key>Dialog</key>
+			<array>
+				<string>        勇士：公主！你得救了！</string>
+				<string>        公主：啊，你是来就我的吗？</string>
+				<string>        勇士：是的，我奉国王的命令来就你的。</string>
+				<string>        勇士：请你快随我出去吧！</string>
+				<string>        公主：不，我还不想走。</string>
+				<string>        勇士：为什么？这里面导出都是恶魔。</string>
+				<string>        公主：正因为这里面到处都是恶魔，所以才不可以就这样出去，我要看</string>
+				<string>着那个恶魔被杀死！</string>
+				<string>        公主：英勇的勇士，如果你能够将那个大恶魔杀死，我就和你一起出</string>
+				<string>去！</string>
+				<string>        勇士：大恶魔？我已经杀死了一个魔王！</string>
+				<string>        公主：大恶魔在这座塔的最顶层，你杀死的可能是一个小队长之类的恶</string>
+				<string>魔。</string>
+				<string>        勇士：好，那你等着，等我杀了那个恶魔再来这里找你！</string>
+				<string>        公主：大恶魔比你刚才杀死的那个厉害多了。而且他还会变身，变身后</string>
+				<string>魔王他的攻击力和防御力会提升至少一半以上，你得小心！</string>
+				<string>        公主：请一定要杀死大魔王！</string>
+			</array>
+			<key>ThingsToGive</key>
+			<array/>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -24,6 +24,8 @@
     NSMutableArray *floorBorn;
     //
     NSMutableArray *shopsInformation;
+    //
+    NSMutableArray *dialogInformation;
     
     Player *player;
     
@@ -40,12 +42,28 @@
     CCLabelTTF *levelLabel;
     
     BOOL isRunningAnimation;
+    
+    struct MTPlot{
+        //主线-救公主
+        BOOL princessTalkedTo;
+        //副1-帮助公主寻找十字架
+        BOOL fairyFirstTalkedTo;
+        BOOL crossFound;
+        BOOL fairySecondTalkedTo;
+        //副2-帮助小偷找到镐子
+        BOOL thiefFirstTalkedTo;
+        BOOL stoveFound;
+        BOOL thiefSecondTalkedTo;
+    };
+    //游戏剧情
+    struct MTPlot gamePlot;
 }
 
 @end
 
 @implementation GameLayer
 
+#pragma mark - Create a scene 
 +(id)scene{
     CCScene *scene=[CCScene node];
     GameLayer *layer=[GameLayer node];
@@ -53,8 +71,19 @@
     return scene;
 }
 
+#pragma mark - init Methood
+
 -(id)init{
 	if(self=[super init]){
+        
+        gamePlot.princessTalkedTo=NO;
+        gamePlot.fairyFirstTalkedTo=NO;
+        gamePlot.crossFound=NO;
+        gamePlot.fairySecondTalkedTo=NO;
+        gamePlot.thiefFirstTalkedTo=NO;
+        gamePlot.stoveFound=NO;
+        gamePlot.thiefSecondTalkedTo=NO;
+        
         //启用触控
         self.isTouchEnabled=YES;
         //载入图像
@@ -68,7 +97,10 @@
         [self loadAnimation];
         //加载方块信息
         [self loadBlockInformation];
-        //添加调试用按钮
+        //加载商店信息
+        [self loadShops];
+        [self loadDialogs];
+        //添加按钮
         CCMenuItem *plusButton=[CCMenuItemImage itemWithNormalImage:@"ButtonPlus.png" selectedImage:@"ButtonPlusSel.png" block:^(id sender){currentFloor+=1;[self reloadMapWithX:-1 Y:-1];}];
         plusButton.anchorPoint=ccp(0,0);
         
@@ -97,11 +129,8 @@
         [buttonMenu setPosition:ccp(0,0)];
         
         [self addChild:buttonMenu z:100];
-        
         //初始化需要的数值
         currentFloor=0;
-        mapSprites=[[NSMutableArray alloc]init];
-        floorBorn=[[NSMutableArray alloc]init];
         //添加背景
 		CCSprite *backgroundSprite=[[CCSprite alloc]initWithFile:@"gameBackground.png"];
         backgroundSprite.anchorPoint=ccp(0,0);
@@ -109,9 +138,9 @@
         [backgroundSprite release];
         //读入地图库
         gameMap=[[NSMutableArray alloc]initWithArray:[[self readPlistWithPlistName:@"MapInformation"]objectForKey:@"LevelMap"]];
+        floorBorn=[[NSMutableArray alloc]init];
         [floorBorn addObject:[[self readPlistWithPlistName:@"MapInformation"]objectForKey:@"UpStairBorn"]];
         [floorBorn addObject:[[self readPlistWithPlistName:@"MapInformation"]objectForKey:@"DownStairBorn"]];
-        [self loadShops];
         //画出地图
         [self initMapSprites];
         [self reloadMapWithX:-1 Y:-1];
@@ -120,7 +149,6 @@
         struct position bornPosition=[self currentBornPositionWithIsUp:MTStairsWayUpstairs];
         [player setPositionWithX:bornPosition.x AndY:bornPosition.y];
         [self addChild:player.sprite z:3];
-        
         //显示信息
         hpLabel=[CCLabelTTF labelWithString:[NSString stringWithFormat:@"生命:%i",player.hp] fontName:@"Marker Felt" fontSize:15.0];
         hpLabel.color=ccBLACK;
@@ -186,9 +214,17 @@
         //[buyLayer showWithThingsToSell:[shopsInformation objectAtIndex:1]];
         //[self addChild:buyLayer z:100];
         
+        //DialogLayer *dialogLayer=[[[DialogLayer alloc]init]autorelease];
+        //[dialogLayer showWithDialogInformation:[dialogInformation objectAtIndex:0]];
+        //dialogLayer.position=ccp(480/2-75,320/2-25);
+        //dialogLayer.delegate=self;
+        //[self addChild:dialogLayer z:100];
+        
 	}
 	return self;
 }
+
+#pragma mark - BuyLayerDelegate
 
 -(void)backClickedWithLayer:(BuyLayer*)layer{
     [self removeChild:layer cleanup:YES];
@@ -200,11 +236,11 @@
     NSDictionary *thingCost=[thingInformation objectForKey:@"ThingCost"];
     
     NSString *thingGetType=[thingGet objectForKey:@"ThingType"];
-    int thingGetValue=[[thingGet objectForKey:@"ThingValue"]intValue];
+    NSString *thingGetValue=[thingGet objectForKey:@"ThingValue"];
     
     NSString *thingCostType=[thingCost objectForKey:@"ThingType"];
     int thingCostValue=[[thingCost objectForKey:@"ThingValue"]intValue];
-    
+    //!!!!
     if([thingCostType isEqualToString:@"Money"]){
         if(player.money>=thingCostValue){
             player.money-=thingCostValue;
@@ -236,32 +272,11 @@
             return;
         }
     }
-    
-    if([thingGetType isEqualToString:@"RedKey"]){
-        player.redKeyCount+=thingGetValue;
-    }else if([thingGetType isEqualToString:@"BlueKey"]){
-        player.blueKeyCount+=thingGetValue;
-    }else if([thingGetType isEqualToString:@"YellowKey"]){
-        player.yellowKeyCount+=thingGetValue;
-    }else if([thingGetType isEqualToString:@"Attack"]){
-        player.attack+=thingGetValue;
-    }else if([thingGetType isEqualToString:@"Defence"]){
-        player.defence+=thingGetValue;
-    }else if([thingGetType isEqualToString:@"HP"]){
-        player.hp+=thingGetValue;
-    }else if([thingGetType isEqualToString:@"Level"]){
-        player.level+=thingGetValue;
-        player.hp+=1000*thingGetValue;
-        player.attack+=10*thingGetValue;
-        player.defence+=10*thingGetValue;
-    }else if([thingGetType isEqualToString:@"Money"]){
-        player.money+=thingGetValue;
-    }
-    
+    [player setPlayerInformationWithString:thingGetType Value:thingGetValue Append:YES];
     [self updateInformationLabel];
-    
-    NSLog(@"You want to buy %i %@,it will cost you %i %@",[[thingGet objectForKey:@"ThingValue"]intValue],[thingGet objectForKey:@"ThingType"],[[thingCost objectForKey:@"ThingValue"]intValue],[thingCost objectForKey:@"ThingType"]);
 }
+
+#pragma mark - Methods for labels
 
 -(void)updateInformationLabel{
     [hpLabel setString:[NSString stringWithFormat:@"生命:%i",player.hp]];
@@ -275,18 +290,7 @@
     [levelLabel setString:[NSString stringWithFormat:@"等级:%i",player.level]];
 }
 
--(struct position)currentBornPositionWithIsUp:(MTStairsWay)stairsWay{
-    //用于返回对应楼层的出生点
-    struct position cPosition;
-    if(stairsWay==MTStairsWayUpstairs){
-        cPosition.x=[[[[floorBorn objectAtIndex:0] objectAtIndex:currentFloor]valueForKey:@"x"]intValue];
-        cPosition.y=[[[[floorBorn objectAtIndex:0] objectAtIndex:currentFloor]valueForKey:@"y"]intValue];
-    }else{
-        cPosition.x=[[[[floorBorn objectAtIndex:1] objectAtIndex:currentFloor]valueForKey:@"x"]intValue];
-        cPosition.y=[[[[floorBorn objectAtIndex:1] objectAtIndex:currentFloor]valueForKey:@"y"]intValue];
-    }
-    return cPosition;
-}   
+#pragma mark Methods for loading
 
 -(void)loadShops{
     shopsInformation=[[NSMutableArray alloc]init];
@@ -295,6 +299,15 @@
     for(NSDictionary *shopDictionary in shopsArray){
         [shopsInformation addObject:shopDictionary];
     }  
+}
+
+-(void)loadDialogs{
+    dialogInformation=[[NSMutableArray alloc]init];
+    NSMutableArray *dialogsArray=[[self readPlistWithPlistName:@"DialogsInformation"]objectForKey:@"DialogsInformation"];
+    
+    for(NSArray *dialogDictionary in dialogsArray){
+        [dialogInformation addObject:dialogDictionary];
+    }   
 }
 
 -(void)loadAnimation{
@@ -326,6 +339,7 @@
 }
 
 -(void)initMapSprites{
+    mapSprites=[[NSMutableArray alloc]init];
     for(int i=0;i<11;i++){
         NSMutableArray *rowSprites=[[NSMutableArray alloc]init];
         for(int j=0;j<11;j++){
@@ -341,6 +355,21 @@
     }
 }
 
+#pragma mark - Map editing methods
+
+-(struct position)currentBornPositionWithIsUp:(MTStairsWay)stairsWay{
+    //用于返回对应楼层的出生点
+    struct position cPosition;
+    if(stairsWay==MTStairsWayUpstairs){
+        cPosition.x=[[[[floorBorn objectAtIndex:0] objectAtIndex:currentFloor]valueForKey:@"x"]intValue];
+        cPosition.y=[[[[floorBorn objectAtIndex:0] objectAtIndex:currentFloor]valueForKey:@"y"]intValue];
+    }else{
+        cPosition.x=[[[[floorBorn objectAtIndex:1] objectAtIndex:currentFloor]valueForKey:@"x"]intValue];
+        cPosition.y=[[[[floorBorn objectAtIndex:1] objectAtIndex:currentFloor]valueForKey:@"y"]intValue];
+    }
+    return cPosition;
+}  
+
 -(void)reloadMapWithX:(int)x Y:(int)y{
     //如果两个坐标都是-1就重载整个地图
     if(x==-1&&y==-1){
@@ -354,9 +383,11 @@
     }
 }
 
--(void)replaceBlockWithX:(int)x Y:(int)y Block:(int)block{
-    [[[gameMap objectAtIndex:currentFloor]objectAtIndex:y]setObject:[NSNumber numberWithInt:block] atIndex:x];
-    [self reloadMapWithX:x Y:y];
+-(void)replaceBlockWithFloor:(int)floor X:(int)x Y:(int)y Block:(int)block{
+    [[[gameMap objectAtIndex:floor]objectAtIndex:y]setObject:[NSNumber numberWithInt:block] atIndex:x];
+    if(floor==currentFloor){
+        [self reloadMapWithX:x Y:y];
+    }
 }
 
 -(void)setBlockZWithX:(int)x Y:(int)y Z:(int)z{
@@ -378,6 +409,16 @@
     }
 }
 
+-(int)blockAtFloor:(int)floor X:(int)x Y:(int)y Full:(BOOL)full{
+    if(full){
+        return [[[[gameMap objectAtIndex:floor]objectAtIndex:y]objectAtIndex:x]intValue];
+    }else{
+        return [[[[gameMap objectAtIndex:floor]objectAtIndex:y]objectAtIndex:x]intValue]%100;
+    }
+}
+
+#pragma mark Basic methods
+
 -(NSMutableDictionary*)readPlistWithPlistName:(NSString*)plistName{
     NSString *error=nil;
     NSPropertyListFormat format;
@@ -388,14 +429,7 @@
     return dict;
 }
 
--(int)blockAtFloor:(int)floor X:(int)x Y:(int)y Full:(BOOL)full{
-    if(full){
-        return [[[[gameMap objectAtIndex:floor]objectAtIndex:y]objectAtIndex:x]intValue];
-    }else{
-        return [[[[gameMap objectAtIndex:floor]objectAtIndex:y]objectAtIndex:x]intValue]%100;
-    }
-    
-}
+#pragma mark Method for player
 
 -(void)playerMoveToX:(int)xTo Y:(int)yTo{
     if(isRunningAnimation)return;
@@ -441,41 +475,14 @@
         for(NSDictionary *thingToGive in thingsToGive){
             
             NSString *thingType=[thingToGive objectForKey:@"Type"];
-            int thingValue=[[thingToGive objectForKey:@"Value"]intValue];
+            NSString *thingValue=[thingToGive objectForKey:@"Value"];
             
-            if([thingType isEqualToString:@"Attack"]){
-                //加攻击
-                player.attack+=thingValue;
-                [self updateInformationLabel];
-            }else if([thingType isEqualToString:@"Defence"]){
-                //加防御
-                player.defence+=thingValue;
-                [self updateInformationLabel];
-            }else if([thingType isEqualToString:@"HP"]){
-                //加生命
-                player.hp+=thingValue;
-                [self updateInformationLabel];
-            }else if([thingType isEqualToString:@"RedKey"]){
-                //加红钥匙
-                player.redKeyCount+=thingValue;
-                [self updateInformationLabel];
-            }else if([thingType isEqualToString:@"YellowKey"]){
-                //加黄钥匙
-                player.yellowKeyCount+=thingValue;
-                [self updateInformationLabel];
-            }else if([thingType isEqualToString:@"BlueKey"]){
-                //加黄钥匙
-                player.blueKeyCount+=thingValue;
-                [self updateInformationLabel];
-            }else if([thingType isEqualToString:@"Money"]){
-                //加金币
-                player.money+=thingValue;
-                [self updateInformationLabel];
-            }
+            [player setPlayerInformationWithString:thingType Value:thingValue Append:YES];
+            [self updateInformationLabel];
         }
         
         //把物品移走
-        [self replaceBlockWithX:xTo Y:yTo Block:0];
+        [self replaceBlockWithFloor:currentFloor X:xTo Y:yTo Block:0];
     }else if([blockType isEqualToString:@"Monster"]){
         //如果是怪物
         int attack=[[blockInf valueForKey:@"Attack"]intValue];
@@ -503,7 +510,7 @@
             //得到经验
             player.exp+=[[blockInf objectForKey:@"Exp"]intValue];
             
-            [self replaceBlockWithX:xTo Y:yTo Block:0];
+            [self replaceBlockWithFloor:currentFloor X:xTo Y:yTo Block:0];
             [self updateInformationLabel];
         }else{
             NSLog(@"打不过");
@@ -533,7 +540,7 @@
                 }
             }
             
-            [self replaceBlockWithX:xTo Y:yTo Block:0];
+            [self replaceBlockWithFloor:currentFloor X:xTo Y:yTo Block:0];
             
             [self updateInformationLabel];
             
@@ -563,7 +570,7 @@
             [leftDoor runAction:[CCSequence actions:leftDoorMoveBy,animationEndBlock,nil]];
             [rightDoor runAction:rightDoorMoveBy];
         }else if([[blockInf valueForKey:@"DoorAnimationType"]isEqualToString:@"OneBody"]){
-            [self replaceBlockWithX:xTo Y:yTo Block:0];
+            [self replaceBlockWithFloor:currentFloor X:xTo Y:yTo Block:0];
             
             [self setBlockZWithX:xTo Y:yTo Z:1];
             CCSprite *gateDoor=[CCSprite spriteWithSpriteFrameName:[blockInf valueForKey:@"UsingImage"]];
@@ -588,22 +595,130 @@
         int extraInf=fullToBlock/100;
         NSLog(@"Load Shop %i",extraInf);
         if(extraInf>0){
-            BuyLayer *buyLayer=[[[BuyLayer alloc]init]autorelease];
-            buyLayer.position=ccp(480/2-120,320/2-120);
-            isRunningAnimation=YES;
-            buyLayer.delegate=self;
-            [buyLayer showWithThingsToSell:[shopsInformation objectAtIndex:extraInf-1]];
-            [self addChild:buyLayer z:100];
+            if(extraInf<7){
+                BuyLayer *buyLayer=[[[BuyLayer alloc]init]autorelease];
+                buyLayer.position=ccp(480/2-120,320/2-120);
+                isRunningAnimation=YES;
+                buyLayer.delegate=self;
+                [buyLayer showWithThingsToSell:[shopsInformation objectAtIndex:extraInf-1]];
+                [self addChild:buyLayer z:100];
+            }else{
+                isRunningAnimation=YES;
+                
+                DialogLayer *dialogLayer=[[[DialogLayer alloc]init]autorelease];
+                [dialogLayer showWithDialogInformation:[dialogInformation objectAtIndex:extraInf-3]];
+                dialogLayer.position=ccp(480/2-75,320/2-25);
+                dialogLayer.delegate=self;
+                [self addChild:dialogLayer z:100];
+            }
         }else{
-            [self replaceBlockWithX:xTo Y:yTo Block:0];
+            [self replaceBlockWithFloor:currentFloor X:xTo Y:yTo Block:0];
+        }
+    }else if([blockType isEqualToString:@"Fairy"]){
+        if(!gamePlot.fairyFirstTalkedTo){
+            isRunningAnimation=YES;
+            
+            DialogLayer *dialogLayer=[[[DialogLayer alloc]init]autorelease];
+            [dialogLayer showWithDialogInformation:[dialogInformation objectAtIndex:0]];
+            dialogLayer.position=ccp(480/2-75,320/2-25);
+            dialogLayer.delegate=self;
+            [self addChild:dialogLayer z:100];
+        }else if(gamePlot.crossFound==YES&&gamePlot.fairySecondTalkedTo==NO){
+            isRunningAnimation=YES;
+            
+            DialogLayer *dialogLayer=[[[DialogLayer alloc]init]autorelease];
+            [dialogLayer showWithDialogInformation:[dialogInformation objectAtIndex:1]];
+            dialogLayer.position=ccp(480/2-75,320/2-25);
+            dialogLayer.delegate=self;
+            [self addChild:dialogLayer z:100];
+        }
+    }else if([blockType isEqualToString:@"LuckyCross"]){
+        gamePlot.crossFound=YES;
+        [self replaceBlockWithFloor:currentFloor X:xTo Y:yTo Block:0];
+    }else if([blockType isEqualToString:@"Thief"]) {
+        
+        
+        if(!gamePlot.thiefFirstTalkedTo){
+            isRunningAnimation=YES;
+            
+            DialogLayer *dialogLayer=[[[DialogLayer alloc]init]autorelease];
+            [dialogLayer showWithDialogInformation:[dialogInformation objectAtIndex:2]];
+            dialogLayer.position=ccp(480/2-75,320/2-25);
+            dialogLayer.delegate=self;
+            [self addChild:dialogLayer z:100];
+        }else if(gamePlot.stoveFound&&gamePlot.thiefSecondTalkedTo==NO){
+            isRunningAnimation=YES;
+            
+            DialogLayer *dialogLayer=[[[DialogLayer alloc]init]autorelease];
+            [dialogLayer showWithDialogInformation:[dialogInformation objectAtIndex:3]];
+            dialogLayer.position=ccp(480/2-75,320/2-25);
+            dialogLayer.delegate=self;
+            [self addChild:dialogLayer z:100];
+        }
+    }else if([blockType isEqualToString:@"Stove"]){
+        gamePlot.stoveFound=YES;
+        [self replaceBlockWithFloor:currentFloor X:xTo Y:yTo Block:0];
+    }else if([blockType isEqualToString:@"Princess"]){
+        if(!gamePlot.princessTalkedTo){
+            isRunningAnimation=YES;
+            
+            DialogLayer *dialogLayer=[[[DialogLayer alloc]init]autorelease];
+            [dialogLayer showWithDialogInformation:[dialogInformation objectAtIndex:8]];
+            dialogLayer.position=ccp(480/2-75,320/2-25);
+            dialogLayer.delegate=self;
+            [self addChild:dialogLayer z:100];
         }
     }
 }
+
+#pragma mark - HitLayerDelegate
 
 -(void)hitFinishedWithLayer:(HitLayer *)layer{
     [layer removeFromParentAndCleanup:YES];
     isRunningAnimation=NO;
 }
+
+#pragma mark - DialogLayerDelegate
+
+-(void)dialogEndWithThingsToGive:(NSArray*)thingsToGive Layer:(DialogLayer *)layer ExtraInformation:(NSString *)extraInf{
+    for(NSDictionary *thingToGive in thingsToGive){
+        [player setPlayerInformationWithString:[thingToGive objectForKey:@"Type"] Value:[thingToGive objectForKey:@"Value"] Append:YES];
+    }
+    [layer removeFromParentAndCleanup:YES];
+    [self updateInformationLabel];
+    isRunningAnimation=NO;
+    
+    if([extraInf isEqualToString:@"FairyFirst"]){
+        [self replaceBlockWithFloor:currentFloor X:5 Y:2 Block:0];
+        [self replaceBlockWithFloor:currentFloor X:4 Y:2 Block:61];
+        gamePlot.fairyFirstTalkedTo=YES;
+    }else if([extraInf isEqualToString:@"FairySecond"]){
+        gamePlot.fairySecondTalkedTo=YES;
+        [self replaceBlockWithFloor:20 X:5 Y:3 Block:4];
+    }else if([extraInf isEqualToString:@"ThiefFirst"]){
+        gamePlot.thiefFirstTalkedTo=YES;
+        [self replaceBlockWithFloor:2 X:1 Y:4 Block:0];
+    }else if([extraInf isEqualToString:@"ThiefSecond"]){
+        gamePlot.thiefSecondTalkedTo=YES;
+        [self replaceBlockWithFloor:4 X:5 Y:10 Block:0];
+        
+        [self replaceBlockWithFloor:18 X:5 Y:1 Block:0];
+        [self replaceBlockWithFloor:18 X:5 Y:2 Block:0];
+    }else if([extraInf isEqualToString:@"2FloorMan"]){
+        [self replaceBlockWithFloor:2 X:7 Y:0 Block:0];
+    }else if([extraInf isEqualToString:@"2FloorWoman"]){
+        [self replaceBlockWithFloor:2 X:9 Y:0 Block:0];
+    }else if([extraInf isEqualToString:@"15FloorMan"]){
+        [self replaceBlockWithFloor:2 X:4 Y:7 Block:0];
+    }else if([extraInf isEqualToString:@"15FloorWoman"]){
+        [self replaceBlockWithFloor:2 X:6 Y:7 Block:0];
+    }else if([extraInf isEqualToString:@"Princess"]){
+        gamePlot.princessTalkedTo=YES;
+        [self replaceBlockWithFloor:18 X:10 Y:0 Block:4];
+    }
+}
+
+#pragma mark - Memory management
 
 -(void)dealloc{
     [super dealloc];

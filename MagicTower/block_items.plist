@@ -7,7 +7,7 @@
             <key>BIgBottle_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{29,110},{25,25}}</string>
+                <string>{{56,110},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,7 +20,7 @@
             <key>BestShield_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{83,110},{25,25}}</string>
+                <string>{{2,137},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -33,7 +33,7 @@
             <key>BestSwords_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{56,110},{25,25}}</string>
+                <string>{{83,110},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,7 +46,7 @@
             <key>BigWings_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,110},{25,25}}</string>
+                <string>{{29,110},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -59,7 +59,7 @@
             <key>BigWings_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{83,83},{25,25}}</string>
+                <string>{{2,110},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -72,7 +72,7 @@
             <key>BlueKey_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{56,83},{25,25}}</string>
+                <string>{{83,83},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -85,7 +85,7 @@
             <key>BlueStone_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{29,83},{25,25}}</string>
+                <string>{{56,83},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -98,7 +98,7 @@
             <key>GoldCoin_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,83},{25,25}}</string>
+                <string>{{29,83},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -111,7 +111,7 @@
             <key>GoldShield_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{83,56},{25,25}}</string>
+                <string>{{2,83},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -124,7 +124,7 @@
             <key>IronShield_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{56,56},{25,25}}</string>
+                <string>{{83,56},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -137,7 +137,7 @@
             <key>IronSwords_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{29,56},{25,25}}</string>
+                <string>{{56,56},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -150,7 +150,7 @@
             <key>KeyBox_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,56},{25,25}}</string>
+                <string>{{29,56},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -163,7 +163,7 @@
             <key>LuckyCross_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{83,29},{25,25}}</string>
+                <string>{{2,56},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -176,7 +176,7 @@
             <key>RedKey_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{56,29},{25,25}}</string>
+                <string>{{83,29},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -189,7 +189,7 @@
             <key>RedStone_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{29,29},{25,25}}</string>
+                <string>{{56,29},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -202,7 +202,7 @@
             <key>SmallBottle_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,29},{25,25}}</string>
+                <string>{{29,29},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -215,7 +215,20 @@
             <key>SmallWings_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{83,2},{25,25}}</string>
+                <string>{{2,29},{25,25}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{25,25}}</string>
+                <key>sourceSize</key>
+                <string>{25,25}</string>
+            </dict>
+            <key>Stove_0.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -228,7 +241,7 @@
             <key>SuperSwords_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{56,2},{25,25}}</string>
+                <string>{{83,2},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -241,7 +254,7 @@
             <key>SuperWater_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{29,2},{25,25}}</string>
+                <string>{{56,2},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -254,7 +267,7 @@
             <key>YellowKey_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{25,25}}</string>
+                <string>{{29,2},{25,25}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -274,7 +287,7 @@
             <key>size</key>
             <string>{128,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:f64973b5d5412dea16d050fab22be70d$</string>
+            <string>$TexturePacker:SmartUpdate:61cb08bcc8decb03a07c8e3f8980bfe3$</string>
             <key>textureFileName</key>
             <string>block_items.png</string>
         </dict>

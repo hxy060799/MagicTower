@@ -303,9 +303,9 @@
 				<integer>43</integer>
 				<integer>41</integer>
 				<integer>1</integer>
-				<integer>63</integer>
+				<integer>763</integer>
 				<integer>1</integer>
-				<integer>62</integer>
+				<integer>862</integer>
 				<integer>1</integer>
 			</array>
 			<array>
@@ -1887,7 +1887,7 @@
 				<integer>0</integer>
 				<integer>1</integer>
 				<integer>43</integer>
-				<integer>0</integer>
+				<integer>69</integer>
 			</array>
 		</array>
 		<array>
@@ -2277,9 +2277,9 @@
 				<integer>3</integer>
 				<integer>1</integer>
 				<integer>1</integer>
-				<integer>63</integer>
+				<integer>963</integer>
 				<integer>1</integer>
-				<integer>62</integer>
+				<integer>1062</integer>
 				<integer>1</integer>
 				<integer>1</integer>
 				<integer>3</integer>
@@ -2409,7 +2409,7 @@
 				<integer>3</integer>
 				<integer>3</integer>
 				<integer>1</integer>
-				<integer>63</integer>
+				<integer>1</integer>
 				<integer>0</integer>
 				<integer>1</integer>
 				<integer>1</integer>
@@ -2627,7 +2627,7 @@
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>
-				<integer>4</integer>
+				<integer>0</integer>
 			</array>
 			<array>
 				<integer>3</integer>
@@ -2635,7 +2635,7 @@
 				<integer>3</integer>
 				<integer>3</integer>
 				<integer>3</integer>
-				<integer>0</integer>
+				<integer>3</integer>
 				<integer>3</integer>
 				<integer>3</integer>
 				<integer>3</integer>
@@ -2648,7 +2648,7 @@
 				<integer>3</integer>
 				<integer>3</integer>
 				<integer>3</integer>
-				<integer>0</integer>
+				<integer>3</integer>
 				<integer>3</integer>
 				<integer>3</integer>
 				<integer>3</integer>
@@ -2951,7 +2951,7 @@
 				<integer>38</integer>
 				<integer>3</integer>
 				<integer>0</integer>
-				<integer>4</integer>
+				<integer>0</integer>
 				<integer>0</integer>
 				<integer>3</integer>
 				<integer>38</integer>
@@ -3278,7 +3278,7 @@
 				<integer>66</integer>
 				<integer>67</integer>
 				<integer>68</integer>
-				<integer>0</integer>
+				<integer>69</integer>
 				<integer>0</integer>
 				<integer>0</integer>
 				<integer>0</integer>

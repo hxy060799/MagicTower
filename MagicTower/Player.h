@@ -50,4 +50,7 @@ struct position{
 -(int)checkWhoWinWithAttack:(int)attackB Defence:(int)defenceB HP:(int)hpB;
 -(NSDictionary*)checkHPWithAttack:(int)attackB Defence:(int)defenceB HP:(int)hpB Time:(int)hitTime;
 
+-(int)setPlayerInformationWithString:(NSString*)infName Value:(NSString*)value Append:(BOOL)append;
+-(int)getPlayerInformationWithString:(NSString*)infName;
+
 @end
